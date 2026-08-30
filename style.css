@@ -160,6 +160,11 @@ body {
     color: var(--text-muted);
 }
 
+.contact-links { margin-top: 1rem; }
+.contact-label.magenta { color: var(--color-magenta); }
+.contact-label.blue { color: var(--color-blue); }
+.contact-label.green { color: var(--color-green); }
+
 .fetch-container {
     display: flex;
     gap: 2rem;

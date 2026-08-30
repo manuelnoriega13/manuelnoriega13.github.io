@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manuel Noriega | manoriega.dev</title>
+    <title>Manuel Noriega | manuelnoriega.dev</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,7 +15,7 @@
                 <div class="btn minimize"></div>
                 <div class="btn maximize"></div>
             </div>
-            <div class="title">manuel@macbook-pro:~ — Tabby</div>
+            <div class="title" id="window-title">manuel@macbook-pro:~ — Tabby</div>
         </div>
 
         <div class="tab-bar">
@@ -60,12 +60,12 @@
     ╚═╝     ╚═╝╚═╝  ╚═══╝
                     </pre>
                     <div class="fetch-info">
-                        <span class="key">manuel</span><span class="at">@</span><span class="host">macbook-pro</span><br>
+                        <span class="key" id="profile-username">manuel</span><span class="at">@</span><span class="host" id="profile-host">macbook-pro</span><br>
                         -------------------<br>
-                        <span class="key">OS</span><span class="separator">:</span>macOS<br>
-                        <span class="key">Role</span><span class="separator">:</span>Software Engineer / Backend Developer<br>
-                        <span class="key">Shell</span><span class="separator">:</span>zsh<br>
-                        <span class="key">Terminal</span><span class="separator">:</span>Tabby<br>
+                        <span class="key">OS</span><span class="separator">:</span><span id="profile-os">macOS</span><br>
+                        <span class="key">Role</span><span class="separator">:</span><span id="profile-role">Software Engineer / Backend Developer</span><br>
+                        <span class="key">Shell</span><span class="separator">:</span><span id="profile-shell">zsh</span><br>
+                        <span class="key">Terminal</span><span class="separator">:</span><span id="profile-terminal">Tabby</span><br>
                     </div>
                 </div>
 
@@ -74,8 +74,7 @@
                     <span class="cmd">cat about.md</span>
                 </div>
                 <div class="output">
-                    Especialista en arquitecturas backend y modernización de sistemas corporativos.<br>
-                    Enfocado en el ecosistema JVM (Java, Kotlin), desarrollo en Go y despliegues en infraestructura local/cloud.
+                    <span id="about-content">Especialista en arquitecturas backend y modernización de sistemas corporativos.<br>Enfocado en el ecosistema JVM (Java, Kotlin), desarrollo en Go y despliegues en infraestructura local/cloud.</span>
                 </div>
                 
                 <div class="prompt-line">
@@ -90,44 +89,7 @@
                     <span class="cmd">ls -l</span>
                 </div>
                 <div class="output">
-                    <table class="file-list">
-                        <tr>
-                            <td class="perms">-rw-r--r--</td>
-                            <td class="owner">manuel</td>
-                            <td class="size">12K</td>
-                            <td class="date">Mar 22 14:30</td>
-                            <td class="filename">sistema_loreto_erp.go</td>
-                        </tr>
-                        <tr>
-                            <td colspan="5" class="tree-branch">
-                                └── Migración de A2 Softway a PostgreSQL. Lógica de precios en Go/Kotlin.
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="perms">-rw-r--r--</td>
-                            <td class="owner">manuel</td>
-                            <td class="size">4K</td>
-                            <td class="date">Feb 18 11:05</td>
-                            <td class="filename">homelab_docker_compose.yml</td>
-                        </tr>
-                        <tr>
-                            <td colspan="5" class="tree-branch">
-                                └── Configuración de Raspberry Pi, Jenkins, Pi-hole y Time Machine backups.
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="perms">-rwxr-xr-x</td>
-                            <td class="owner">manuel</td>
-                            <td class="size">45M</td>
-                            <td class="date">Jan 05 20:45</td>
-                            <td class="filename">delivery_game_engine.gd</td>
-                        </tr>
-                        <tr>
-                            <td colspan="5" class="tree-branch">
-                                └── Proyecto personal en Godot: Juego isométrico 2D con sprites en pixel art.
-                            </td>
-                        </tr>
-                    </table>
+                    <table class="file-list"><tbody id="projects-list"></tbody></table>
                 </div>
                 
                 <div class="prompt-line">
@@ -141,11 +103,7 @@
                     <span class="user">manuel</span><span class="at">@</span><span class="host">macbook-pro</span><span class="colon">:</span><span class="path">~/contact</span><span class="symbol">❯</span>
                     <span class="cmd">./show_links.sh</span>
                 </div>
-                <div class="output" style="margin-top: 1rem;">
-                    [<span style="color: var(--color-magenta);">github</span>]   -> <a href="#">github.com/manuel-noriega</a><br>
-                    [<span style="color: var(--color-blue);">linkedin</span>] -> <a href="#">linkedin.com/in/manuel-noriega</a><br>
-                    [<span style="color: var(--color-green);">email</span>]    -> <a href="mailto:tuemail@ejemplo.com">tuemail@ejemplo.com</a>
-                </div>
+                <div class="output contact-links" id="contact-list"></div>
 
                 <div class="prompt-line">
                     <span class="user">manuel</span><span class="at">@</span><span class="host">macbook-pro</span><span class="colon">:</span><span class="path">~/contact</span><span class="symbol">❯</span>

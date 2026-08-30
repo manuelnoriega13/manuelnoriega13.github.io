@@ -1,0 +1,61 @@
+{
+  "site": {
+    "name": "Manuel Noriega",
+    "username": "manuel",
+    "host": "macbook-pro",
+    "domain": "manuelnoriega.dev",
+    "terminal": "Tabby"
+  },
+  "profile": {
+    "os": "macOS",
+    "role": "Software Engineer / Backend Developer",
+    "shell": "zsh",
+    "about": [
+      "Especialista en arquitecturas backend y modernización de sistemas corporativos.",
+      "Enfocado en el ecosistema JVM (Java, Kotlin), desarrollo en Go y despliegues en infraestructura local/cloud."
+    ]
+  },
+  "projects": [
+    {
+      "permissions": "-rw-r--r--",
+      "size": "12K",
+      "date": "Mar 22 14:30",
+      "filename": "sistema_loreto_erp.go",
+      "description": "Migración de A2 Softway a PostgreSQL. Lógica de precios en Go/Kotlin."
+    },
+    {
+      "permissions": "-rw-r--r--",
+      "size": "4K",
+      "date": "Feb 18 11:05",
+      "filename": "homelab_docker_compose.yml",
+      "description": "Configuración de Raspberry Pi, Jenkins, Pi-hole y Time Machine backups."
+    },
+    {
+      "permissions": "-rwxr-xr-x",
+      "size": "45M",
+      "date": "Jan 05 20:45",
+      "filename": "delivery_game_engine.gd",
+      "description": "Proyecto personal en Godot: Juego isométrico 2D con sprites en pixel art."
+    }
+  ],
+  "contact": [
+    {
+      "label": "github",
+      "url": "https://github.com/manuel-noriega",
+      "display": "github.com/manuel-noriega",
+      "color": "magenta"
+    },
+    {
+      "label": "linkedin",
+      "url": "https://linkedin.com/in/manuel-noriega",
+      "display": "linkedin.com/in/manuel-noriega",
+      "color": "blue"
+    },
+    {
+      "label": "email",
+      "url": "mailto:tuemail@ejemplo.com",
+      "display": "tuemail@ejemplo.com",
+      "color": "green"
+    }
+  ]
+}
